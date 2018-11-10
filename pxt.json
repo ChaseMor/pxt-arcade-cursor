@@ -10,7 +10,8 @@
         "main.ts",
         "cursor.ts",
         "samplecursors.ts",
-        "cursor.jres"
+        "cursor.jres",
+        "main.blocks"
     ],
     "testFiles": [
         "test.ts"

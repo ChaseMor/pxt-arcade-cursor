@@ -1,0 +1,36 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="pxt-on-start" x="0" y="0">
+    <statement name="HANDLER">
+      <block type="cursor_createCursor">
+        <value name="img">
+          <shadow type="screen_image_picker" id="43~4RdIEa73m~|2fYyX)">
+            <field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`
+            </field>
+          </shadow>
+          <block type="cursor_sampleCursor">
+            <field name="NAME">cursor.Sample.SpaceShip</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="gameupdate" x="570" y="270"></block>
+</xml>
