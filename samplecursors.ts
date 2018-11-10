@@ -2,17 +2,22 @@
 namespace cursor {
 
     export enum Sample {
+        //% jres=cursor.cursor1
         Arrow,
+        //% jres=cursor.cursor2
         Cross,
+        //% jres=cursor.cursor3
         X,
+        //% jres=cursor.cursor4
         Box,
+        //% jres=cursor.cursor5
         SpaceShip
     }
 
     /**
     * 
     */
-    //% block
+    //% block="sample %NAME"
     export function sampleCursor(choice: Sample): Image {
         switch (choice) {
             case Sample.Arrow:

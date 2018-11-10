@@ -3,17 +3,17 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "device": "*"
     },
     "files": [
         "README.md",
         "main.ts",
         "cursor.ts",
-        "samplecursors.ts"
+        "samplecursors.ts",
+        "cursor.jres"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false,
+    "public": true,
     "installedVersion": "workspace:1c8116c9-a963-4b09-f49f-9d4882a52036"
 }
