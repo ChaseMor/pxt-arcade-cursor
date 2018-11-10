@@ -7,10 +7,13 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "cursor.ts",
+        "samplecursors.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false
+    "public": false,
+    "installedVersion": "workspace:1c8116c9-a963-4b09-f49f-9d4882a52036"
 }
