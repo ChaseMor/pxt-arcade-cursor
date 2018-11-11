@@ -1,10 +1,16 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <variables></variables>
+  <variables>
+    <variable type="" id="0DY0i$1I?tvlR$?Y*N)q">p1</variable>
+    <variable type="" id="Z2BpXK@E.I2Oo,TZ,*})">p2</variable>
+    <variable type="" id="9SfJbDw{d--15KqBn_Cf">projectile</variable>
+    <variable type="SpriteKind" id="d._-tWGB.t/S}wVZM_ai">0Player</variable>
+    <variable type="SpriteKind" id="cQvh6j0{4BQI0Q{j_]gU">1Enemy</variable>
+  </variables>
   <block type="pxt-on-start" x="0" y="0">
     <statement name="HANDLER">
       <block type="cursor_createCursor">
         <value name="img">
-          <shadow type="screen_image_picker" id="43~4RdIEa73m~|2fYyX)">
+          <shadow type="screen_image_picker" id="Rebh_Rq7?t|JhkxrQ6RS">
             <field name="img">img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -23,14 +29,77 @@
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `
+            
             </field>
           </shadow>
           <block type="cursor_sampleCursor">
-            <field name="NAME">cursor.Sample.SpaceShip</field>
+            <field name="NAME">cursor.Sample.Arrow</field>
           </block>
         </value>
       </block>
     </statement>
   </block>
-  <block type="gameupdate" x="570" y="270"></block>
+  <block type="cursor_onDragRelease" x="60" y="240">
+    <value name="HANDLER_DRAG_PARAM_p1">
+      <shadow type="variables_get_reporter">
+        <field name="VAR" id="0DY0i$1I?tvlR$?Y*N)q" variabletype="">p1</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_p2">
+      <shadow type="variables_get_reporter">
+        <field name="VAR" id="Z2BpXK@E.I2Oo,TZ,*})" variabletype="">p2</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="variables_set">
+        <field name="VAR" id="9SfJbDw{d--15KqBn_Cf" variabletype="">projectile</field>
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="spritescreateprojectile">
+            <mutation _expanded="0" _input_init="false"></mutation>
+            <value name="img">
+              <shadow type="screen_image_picker">
+                <field name="img">img`
+. . . . . . b b b b . . . . . . 
+. . . . . . b 4 4 4 b . . . . . 
+. . . . . . b b 4 4 4 b . . . . 
+. . . . . b 4 b b b 4 4 b . . . 
+. . . . b d 5 5 5 4 b 4 4 b . . 
+. . . . b 3 2 3 5 5 4 e 4 4 b . 
+. . . b d 2 2 2 5 7 5 4 e 4 4 e 
+. . . b 5 3 2 3 5 5 5 5 e e e e 
+. . b d 7 5 5 5 3 2 3 5 5 e e e 
+. . b 5 5 5 5 5 2 2 2 5 5 d e e 
+. b 3 2 3 5 7 5 3 2 3 5 d d e 4 
+. b 2 2 2 5 5 5 5 5 5 d d e 4 . 
+b d 3 2 d 5 5 5 d d d 4 4 . . . 
+b 5 5 5 5 d d 4 4 4 4 . . . . . 
+4 d d d 4 4 4 . . . . . . . . . 
+4 4 4 4 . . . . . . . . . . . . 
+`
+                </field>
+              </shadow>
+            </value>
+            <value name="vx">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="vy">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="kind">
+              <shadow type="spritetype">
+                <field name="MEMBER">0Player</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
 </xml>
