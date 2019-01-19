@@ -26,7 +26,7 @@ class Cursor {
 
     constructor(image: Image) {
         this.sprite = sprites.create(image);
-        controller.controlSprite(this.sprite, 100, 100)
+        controller.moveSprite(this.sprite, 100, 100)
 
         game.currentScene().eventContext.registerFrameHandler(19, () => {
             this.sprite.vx = 0;
